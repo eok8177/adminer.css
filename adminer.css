@@ -392,13 +392,15 @@ select option:hover {
 }
 input:autofill,
 input:-internal-autofill-selected {
-    background-color: transparent;
-    box-shadow: none;
+
+    background-color: transparent !important;
+    box-shadow: none !important;
 }
 input,
 select,
 textarea
 {
+    color-scheme: dark;
     color: var(--white);
     font-size: 15px;
     border: none;
