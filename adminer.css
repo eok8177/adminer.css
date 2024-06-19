@@ -172,7 +172,7 @@ body {
     height: 100%;
     max-height: 100%;
     overflow: hidden;
-    
+
 }
 
 body{
@@ -199,8 +199,8 @@ h1{
 }
 
 h2{
-    font-size: 22px; 
-    margin: 0; 
+    font-size: 22px;
+    margin: 0;
     padding: 0;
     padding-left: 16px;
     border-bottom: 1px solid #333;
@@ -863,6 +863,10 @@ code.jush-sql ~ a:hover,
 .jush-sql_code{
     color: #fafafa !important;
     font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.jush {
+    color: var(--white);
 }
 
 .jush a, .jush a:visited{
