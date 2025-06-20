@@ -622,6 +622,7 @@ legend{
     padding: 0;
     top: 0;
     overflow-y: overlay;
+    resize: horizontal;
 }
 
 #menu p {
@@ -936,4 +937,20 @@ body > form{
     background: rgb(50,50,50,0.85);
     margin-left: -6px;
     padding: 4px;
+}
+
+.edit,
+.edit-all,
+.select {
+    filter: invert(80%);
+}
+#dbs {
+    background-color: transparent;
+    white-space: nowrap;
+}
+#dbs td {
+    background-color: transparent;
+}
+#dbs select {
+    margin: 0;
 }
