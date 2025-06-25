@@ -177,6 +177,7 @@ body {
 
 body{
     min-height: 100%;
+    min-width: 100%;
     font-size: 14px;
     position: relative;
     color: var(--white);
@@ -610,9 +611,16 @@ legend{
 }
 
 /* menu  */
-#menu{
+#foot {
     height: 100%;
     width: 315px;
+    overflow-y: overlay;
+    resize: horizontal;
+    display: flex;
+}
+#menu{
+    height: 100%;
+    width: 100%;
     background-color: #333;
     position: relative;
     order: 1;
@@ -621,8 +629,7 @@ legend{
     margin: 0;
     padding: 0;
     top: 0;
-    overflow-y: overlay;
-    resize: horizontal;
+    bottom: 0;
 }
 
 #menu p {
@@ -767,6 +774,9 @@ code.jush-sql ~ a:hover,
 {
     color: #eee;
     border-color: #eee;
+}
+pre.jush {
+    background: transparent;
 }
 
 #ajaxstatus + *{
@@ -925,6 +935,7 @@ body > form{
 .footer {
     border-top: 6px solid rgba(231,247,237,0.2);
     border-image: linear-gradient(rgba(231,247,237,0.2),rgba(50,50,50,0.85)) 100% 0;
+    box-shadow: none;
     margin: 0;
     margin-left: -6px;
 }
@@ -953,4 +964,15 @@ body > form{
 }
 #dbs select {
     margin: 0;
+}
+
+.logout {
+    background-color: transparent;
+    box-shadow: none;
+}
+.logout span {
+    font-weight: 700;
+}
+.edit, .edit-all, .select {
+    filter: none;
 }
