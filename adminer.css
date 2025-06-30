@@ -69,7 +69,7 @@ b {
     margin-top: 0;
     top: 100%;
     z-index: 9;
-    right: 0px;
+    left: 0px;
 }
 
 .js .column:not(.hidden) {display: flex;}
@@ -244,6 +244,9 @@ table{
     border-collapse: collapse;
     font-size: 13px;
 }
+thead {
+    z-index: 2;
+}
 
 thead tr:first-child {
     position: sticky;
@@ -337,6 +340,9 @@ td code {background-color: transparent;}
 
 .odd td{
     background: var(--black);
+}
+.odds tbody tr:nth-child(2n) {
+    background: var(--alfa-msg);
 }
 
 thead td,
